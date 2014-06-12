@@ -3,8 +3,9 @@
     <head>
         <title>Flat cake - demo</title>
         <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>
@@ -13,12 +14,13 @@
                 <a class="nav-left">Hello world</a>
             </div>
         </div>
+
         <aside id="user-sidebar">
             <header class="header-sidebar">
                 <p class="center">User Panel</p>
             </header>
             <div class="sub-header-sidebar">
-                <img alt="Profile Picture" src="//kisune.com/wp-content/uploads/2013/11/1374860414-bpfull1.jpg" height="100" class="circle center" />
+                <img alt="Profile Picture" src="//kisune.com/wp-content/uploads/2013/11/1374860414-bpfull1.jpg" height="100px" class="circle center" />
                 <p class="center">
                     <strong>Username</strong>
                 </p>
@@ -112,95 +114,61 @@
                 </div>
             </div>
         </aside>
+
         <div id="right-column">
             <section class="bg-header">
                 <div class="bg-header-container">
                     <h1>Flat-Cake - demo</h1>
                     <h2>share what you like!</h2>
                 </div>
+
                 <div class="bg-header-quote dark-alpha">
                     <h2>"hello world..."</h2>
                     <h3>from unknown</h3>
                 </div>
             </section>
+
             <section class="breadcrumbs">
                 <div class="breadcrumbs-container">
-                    <a href="/">home</a> <!-- > page > page2 -->
+                    <a href="index.html">home</a> &#62; <a href="form.html">form</a> <!-- > page > page2 -->
                 </div>
             </section>
+
             <section class="content">
                 <div class="container">
-                    <article class="entry entry-0">
-                        <a href="#">
-                            <div class="cat-cover">
-
-                                <img src="img/c_1.jpg" alt="" />
-
-                            </div>
-                        </a>
-                        <ul>
-                            <li><a href="#">Lasted one</a></li>
-                            <li><a href="#">Lasted two</a></li>
-                            <li><a href="#">Lasted tree</a></li>
-                            <li class="more"><a href="#">more...</a></li>
-                        </ul>
-                        <header>
-                            <h2><a href="#">First category</a></h2>
-                        </header>
+                    <article>
+                        <header><h2>Form</h2></header>
                     </article>
 
-                    <article class="entry entry-1">
-                        <a href="#">
-                            <div class="cat-cover">
-                                <!-- http://www.photo-libre.fr -->
-                                <img src="img/c_1.jpg" alt="" />
+                    <form class="panel">
+                        <fieldset>
+                            <legend>Hey! You! Yeah, you! What do you think about my fields?</legend>
+
+                            <div class="form-render">
+                                <label for="text">Text</label>
+                                <input type="text" id="text" placeholder="text..."/>
                             </div>
-                        </a>
-                        <ul>
-                            <li><a href="#">Lasted one</a></li>
-                            <li><a href="#">Lasted two</a></li>
-                            <li><a href="#">Lasted tree</a></li>
-                            <li class="more"><a href="#">more...</a></li>
-                        </ul>
-                        <header><h2><a href="#">Second category</a></h2></header>
-                    </article>
 
-                    <article class="entry entry-0">
-                        <a href="#">
-                            <div class="cat-cover">
-
-                                <!-- http://www.photo-libre.fr -->
-                                <img src="img/c_1.jpg" alt="" />
-
+                            <div class="form-render">
+                                <label for="pwd">Password</label>
+                                <input type="password" id="pwd" placeholder="password..."/>
                             </div>
-                        </a>
-                        <ul>
-                            <li><a href="#">Lasted one</a></li>
-                            <li><a href="#">Lasted two</a></li>
-                            <li><a href="#">Lasted tree</a></li>
-                            <li class="more"><a href="#">more...</a></li>
-                        </ul>
-                        <header><h2><a href="#">Third category</a></h2></header>
-                    </article>
 
-                    <article class="entry entry-1">
-                        <a href="#">
-                            <div class="cat-cover">
-                                <!-- http://www.photo-libre.fr -->
-                                <img src="img/c_1.jpg" alt="" />
+                            <div class="form-render">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="password..."/>
                             </div>
-                        </a>
-                        <ul>
-                            <li><a href="#">Lasted one</a></li>
-                            <li><a href="#">Lasted two</a></li>
-                            <li><a href="#">Lasted tree</a></li>
-                            <li class="more"><a href="#">more...</a></li>
-                        </ul>
-                        <header><h2><a href="#">Fourth category</a></h2></header>
-                    </article>
+
+                            <div class="form-render">
+                                <label for="textarea">Text-area</label>
+                                <textarea id="textarea" placeholder="Textarea..."></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
         </div>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="js/jq.js"></script>
     </body>
