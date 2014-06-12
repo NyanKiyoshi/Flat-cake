@@ -455,10 +455,6 @@ article.entry img {
     height: auto;
 }
 
-article.entry img:hover {
-    box-shadow: 0 0 0 3px #000000;
-}
-
 article.entry .article-content {
     padding: 14px;
 }
